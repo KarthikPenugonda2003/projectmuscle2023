@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration</title> 
+    <link rel="stylesheet" href="login_registration_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <script language="javascript">
+      function validate()
+      {
+      var nam = document.f1.uname.value;
+      if(nam=="")
+      {
+      alert("Please enter name");
+      document.f1.uname.focus();
+      return false;
+      }
+      var pwd = document.f1.pass.value;
+      if(pwd=="")
+      {
+      alert("Please enter Password");
+      document.f1.pass.focus();
+      return false;
+      }
+      var email = document.f1.email.value;
+      if(email=="")
+      {
+      alert("Please enter your email");
+      document.f1.email.focus();
+      return false;
+      }
+      var phno = document.f1.phone.value;
+      if (phno === "" || isNaN(phno) || phno.length !== 10) {
+        alert("Please enter a valid phone number with 10 digits");
+        document.f1.phone.focus();
+        return false;
+      }
+      }
+      </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="title"><span>Registration Form</span></div>
+        <form name="f1" action="insert.php" method="post" onsubmit="return validate()">
+            <div class="row">
+              <i class="fas fa-user"></i> 
+                <input type="text" name="uname" placeholder="Enter username" required>
+              </div>
+              <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="pass" placeholder="Enter password" required>
+              </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+                <input type="text" name="email" placeholder="Enter your Email" required>
+              </div>
+          <div class="row">
+            <i class="fas fa-phone"></i>
+            <input type="number" name="phone" placeholder="Enter your Phone number" required>
+          </div>
+          <div class="row button">
+            <input type="submit" value="Register">
+          </div>
+          <div class="signup-link">Already a member? <a href="login.html">Login now</a></div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

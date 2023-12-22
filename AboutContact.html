@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="app.js"></script>
+<style>
+
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+   background: #097969;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div{
+padding: 10px;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i {
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container .content .right-side {
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box {
+  min-height: 110px;
+}
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover {
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
+}
+@media (max-width: 820px) {
+  .container {
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content {
+    flex-direction: column-reverse;
+  }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* .button:hover {
+  background-color: #555;
+} */
+
+/* /// */
+header {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    color: white;
+    transition: 0.5s ease 0.5s;
+    max-width: 1080px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  #gentag{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+
+.about-section {
+  padding: 70px;
+  text-align: justified;
+  background-color: #097969;
+  color: white;
+}
+h1{
+text-align: center;
+color: white;
+}
+h3{
+text-align: center;
+}
+.center {
+  
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style>
+</head>
+
+ <body>
+<div>
+
+<div>
+    <header class="header clickable-link2" href="#" data-destination="main.html">
+      <a id="gentag" href="main.html">PROJECT MUSCLE</a>
+    </header>
+</div>
+
+<div class="about-section" id="about">
+  <h1>About Project Muscle</h1>
+  <p><br>At Project Muscle, we envision a world where individuals can embark on their fitness journey with confidence. Our vision is to empower users by providing a comprehensive and accessible platform that guides them towards their health and wellness goals. We believe in the transformative power of exercise and its ability to enhance not only physical strength but also mental well being.</p>
+<br>
+  <p>In a world inundated with information, Project Muscle stands out as a beacon of reliable guidance. Our vision is to simplify the fitness experience, making it easier for users to discover targeted exercises that align with their goals. Whether you're a seasoned fitness enthusiast or just starting, we aspire to be your go-to resource for personalized workout recommendations.</p><br><br>
+<h3 class="cen"><p><b>
+"Join us in this journey towards a healthier and happier life.<br> Let's make fitness a fulfilling and achievable endeavor for everyone, one muscle at a time"</b></p><br><h3>
+</div>
+
+<div class="center" id="contact">
+<h1>Contact Us</h1>
+    <div class="container">
+      <div class="content">
+        
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any queries, you can send me message from here. It's my pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" />
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email" />
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
