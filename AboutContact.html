@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="AboutContact.css">
+    <script type="text/javascript" src="app.js"></script>
+<script language="javascript">
+  function validate(event)
+  {
+  var em = document.f1.email.value;
+  if(em.trim()==="")
+  {
+  alert("Email can't be empty");
+  // document.f1.uname.focus();
+  event.preventDefault();
+  return false;
+  }
+  var nam = document.f1.uname.value;
+  if(nam.trim()==="")
+  {
+  alert("Name can't be empty");
+  // document.f1.pass.focus();
+  event.preventDefault();
+  return false;
+  }
+  var mes = document.f1.message.value;
+  if(mes.trim()==="")
+  {
+    alert("Message can't be empty");
+    // document.f1.mes.focus();
+    event.preventDefault();
+    return false;
+  }
+  }
+  </script>
+</head>
+
+ <body>
+<div>
+
+<div>
+    <header class="header clickable-link2" href="#" data-destination="main.html">
+      <a id="gentag" href="main.html">PROJECT MUSCLE</a>
+    </header>
+</div>
+
+<div class="about-section" id="about">
+  <h1>About Project Muscle</h1>
+  <p><br>At Project Muscle, we envision a world where individuals can embark on their fitness journey with confidence. Our vision is to empower users by providing a comprehensive and accessible platform that guides them towards their health and wellness goals. We believe in the transformative power of exercise and its ability to enhance not only physical strength but also mental well being.</p>
+<br>
+  <p>In a world inundated with information, Project Muscle stands out as a beacon of reliable guidance. Our vision is to simplify the fitness experience, making it easier for users to discover targeted exercises that align with their goals. Whether you're a seasoned fitness enthusiast or just starting, we aspire to be your go-to resource for personalized workout recommendations.</p><br><br>
+<h3 class="cen"><p><b>
+"Join us in this journey towards a healthier and happier life.<br> Let's make fitness a fulfilling and achievable endeavor for everyone, one muscle at a time"</b></p><br><h3>
+</div>
+
+<div class="center" id="contact">
+<h1>Contact Us</h1>
+    <div class="container">
+      <div class="content">
+        
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any queries, you can send us a message from here.</p>
+          <form name="f1" action="contact.php" method="post" onsubmit="validate(event)">
+            <div class="input-box">
+              <input type="text" name="email" placeholder="Enter your email" />
+            </div>
+            <div class="input-box">
+              <input type="text" name="uname" placeholder="Enter your name" />
+            </div>
+            <div class="input-box message-box">
+              <textarea name="message" placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" value="Send Now" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="copyrights">
+  &copy; copyrights | All Rights Reserved
+</div>
+</div>
+</body>
+</html>

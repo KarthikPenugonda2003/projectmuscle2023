@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="res.css" />
+    <title>Word Guess Game</title>
+<!-- New script added to remove watermark -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+          if(disclaimer) {
+              disclaimer.remove();
+          }
+      });
+  </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>WORD GUESS GAME</h1>
+      <a id="gentag" href="../main.html">PROJECT MUSCLE</a>
+    </header>
+      <div class="sectionwrapper">
+        <section class="leftside">
+          <div id="imgdivid" class="imgdivclass">
+            <!--empty div for js to create image when user guesses right-->
+          </div>
+        </section>
+        <section class="rightside">
+          <div class="start">
+            <div class="keytostart">PRESS ANY KEY TO START!</div>
+            <div class="winsP">WINS: <span class="winscount">0</span></div>
+            <div id="wordWrap">
+              <!--divs to creat underlines-->
+              <div class="underline"></div>
+            </div>
+            <div class="guessremainingP">NUMBER OF GUESSES REMAINING</div>
+            <div><span id="guessremainingNum">15</span></div>
+            <div class="GuessedLetters">LETTERS ALREADY GUESSED</div>
+            <div class="guessedlettersdiv"></div>
+          </div>
+        </section>
+      </div>
+      <!--closing right side section-->
+
+      <script src="main.js"></script>
+
+      <footer class="copyrights">
+        &copy; copyrights | All Rights Reserved
+      </footer> 
+  </body>
+</html>

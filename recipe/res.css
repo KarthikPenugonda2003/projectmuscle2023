@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #097969;
+  color: white;
+}
+
+header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  color: white;
+  transition: 0.5s ease 0.5s;
+  max-width: 1080px;
+  height: 130px;
+  margin: 0 auto;
+}
+#gentag{
+  text-decoration: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #77959eb0;
+}
+
+.sectionwrapper {
+  margin: 100px auto;
+  border: 3px solid rgba(255, 255, 255, 0.559);
+  width: 900px;
+  border-radius: 4px;
+  position: relative;
+  text-align: right;
+  height: 525px;
+  font-family: "BlinkMacSystemFont";
+}
+
+img {
+  height: 520px;
+  width: 600px;
+  position: relative;
+  left: 0px;
+  right: 50px;
+  bottom: 0px;
+}
+
+.leftside {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  transition: 0.5s ease 0.5s;
+}
+
+.rightside {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  text-align: center;
+  transition: 0.5s ease 0.5s;
+}
+
+.keytostart {
+  padding: 50px;
+}
+
+.winsP {
+  padding: 20px;
+}
+
+#wordWrap {
+  padding: 50px;
+  text-align: center;
+}
+
+.guessremainingP {
+  padding: 10px;
+}
+
+.GuessedLetters {
+  padding: 20px;
+}
+
+.guessedlettersdiv {
+  padding: 65px;
+  text-align: center;
+}
+
+.start {
+  position: relative;
+  left: 25%;
+}
+
+  /* copyrights  */
+.copyrights{
+text-transform: capitalize;
+height: 20px;
+width: 100%;
+line-height: 20px;
+background: #222;
+text-align: center;
+font-size: 12px;
+color: #fff;
+}
