@@ -1,3 +1,6 @@
+/* read comments */
+/* i have also commented some extra code which is of no use... if i accidently commented something important then sorry for that */
+
 
 /* Google Font CDN Link */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -9,32 +12,41 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 body {
-   background: #097969;
+  background: #097969;
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div{
-padding: 10px;
-}
-.container {
-  max-width: 1100px;
+#contact{
   width: 100%;
+  box-sizing: border-box;
+  padding: 2% 5%;
+}
+#contact .container {
+  width: 55%;
+  box-sizing: border-box;
+  margin: 20px auto;
+  /* max-width: 1100px; */
   background: #fff;
   border-radius: 6px;
-  padding: 20px 60px 30px 40px;
+  padding: 35px 0;
+  /* padding: 20px 60px 30px 40px; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .container .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
 }
-.container .content .left-side {
+
+
+/* nothing on left side in contact section.. check html once */
+/* .container .content .left-side {
   width: 25%;
   height: 100%;
   display: flex;
@@ -71,16 +83,24 @@ padding: 10px;
 .content .left-side .details .text-two {
   font-size: 14px;
   color: #afafb6;
-}
+} */
 
 .container .content .right-side {
-  width: 75%;
-  margin-left: 75px;
+  width: 90%;
+  margin: auto;
+
+  /* margin-left: 75px; */
 }
 .content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
   color: #3e2093;
+  text-align: center;
+}
+.content .right-side p{
+  text-align: center;
+  font-size: small;
+  color: gray;
 }
 .right-side .input-box {
   height: 55px;
@@ -105,26 +125,12 @@ padding: 10px;
 .right-side .input-box textarea {
   padding-top: 6px;
 }
-.right-side .button {
-  display: inline-block;
-  margin-top: 12px;
-}
-.right-side .button input[type="submit"] {
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #3e2093;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.button input[type="submit"]:hover {
-  background: #5029bc;
-}
 
-@media (max-width: 950px) {
+
+
+
+
+/* @media (max-width: 950px) {
   .container {
     width: 90%;
     padding: 30px 40px 40px 35px;
@@ -156,72 +162,126 @@ padding: 10px;
     width: 100%;
     margin-left: 0;
   }
-}
+} */
 
 .button {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  /* padding: 8px; */
   color: white;
   background-color: #fff;
   text-align: center;
   cursor: pointer;
   width: 100%;
+  margin-top: 12px;
 }
-
 /* .button:hover {
   background-color: #555;
 } */
 
+.button input[type="submit"] {
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="submit"]:hover {
+  background: #5029bc;
+}
+
+
 /* /// */
 header {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 36px;
-    padding: 20px;
-    color: white;
-    transition: 0.5s ease 0.5s;
-    max-width: 1080px;
-    height: 30px;
-    margin: 0 auto;
-  }
+  /* this field are also repeated in #gentag... so our goal should be to type less css because lesser code == more speed loading of website*/
+  /* font-family: "Montserrat", Arial, Helvetica, sans-serif; */
+  /* font-size: 36px; */
+  /* color: white; */
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  transition: 0.5s ease 0.5s;
+  max-width: 1080px;
+  /* i am removing height because when we make responsive it creates troble fixing content.. best practice is to keep height fixed only when required or use properties like min-height or max-heiight instead of height. */
+  /* height: 30px; */
+  margin: 0 auto;
+}
 
-  #gentag{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 45px;
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    color: #fff;
-  }
+#gentag {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
 
 .about-section {
+  width: 100%;
   padding: 70px;
   text-align: justified;
   background-color: #097969;
   color: white;
+  overflow-x: hidden;
 }
-h1{
-text-align: center;
-color: white;
+h1 {
+  text-align: center;
+  color: white;
 }
-h3{
-text-align: center;
+h3 {
+  text-align: center;
 }
-.center {
+/* .center {
   margin: auto;
   width: 50%;
   padding: 10px;
+} */
+
+/* copyrights  */
+.copyrights {
+  text-transform: capitalize;
+  padding: 5px;
+  width: 100%;
+  background: #222;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
 }
 
-  /* copyrights  */
-  .copyrights{
-    text-transform: capitalize;
-    height: 20px;
-    width: 100%;
-    line-height: 0px;
-    background: #222;
-    text-align: center;
-    font-size: 12px;
-    color: #fff;
+
+/* this code will make site responsive */
+@media screen and (max-width: 900px) {
+  #contact .container {
+    width: 75%;
   }
+}
+@media screen and (max-width: 500px) {
+  #gentag {
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .about-section {
+    padding: 30px;
+  }
+  .about-section h1 {
+    font-size: 28px;
+  }
+  .about-section p{
+    font-size: 14px;
+  }
+  #contact .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 260px) {
+  .about-section {
+    padding: 10px;
+  }
+  #contact .container {
+    width: 99%;
+  }
+}
