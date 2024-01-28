@@ -19,6 +19,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 #contact{
   width: 100%;
